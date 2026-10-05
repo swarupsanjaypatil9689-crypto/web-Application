@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal | RCPCOEP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <h1>RCPCOEP Web Application</h1>
+      <p>Department of Computer Engineering</p>
+    </div>
+    <div class="header-time" id="clock">00:00:00 AM</div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    
+    <!-- Profile Card -->
+    <section class="card profile-card">
+      <div class="profile-header">
+        <div class="avatar">PS</div>
+        <div>
+          <h2>Patil Swarup</h2>
+          <p class="tag">Computer Engineering</p>
+        </div>
+      </div>
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="label">Institution</span>
+          <span class="value">RCPCOEP</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Role</span>
+          <span class="value">Student / Developer</span>
+        </div>
+        <div class="info-item">
+          <span class="label">Status</span>
+          <span class="value badge-active">Active</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Task Manager Widget -->
+    <section class="card widget-card">
+      <h3>Quick Task Manager</h3>
+      <div class="input-group">
+        <input type="text" id="taskInput" placeholder="Add a new engineering task...">
+        <button id="addBtn">Add Task</button>
+      </div>
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
